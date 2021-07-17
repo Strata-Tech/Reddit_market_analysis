@@ -1,6 +1,7 @@
 # Reddit_market_analysis📈🚀💰💎👐
 Analysis of reddit community 's most mentioned stocks and sentiment on the stocks(i.e bullish or bearish)
 
+![wallstreetmemes-lede-1300x734](https://user-images.githubusercontent.com/77420780/126026718-a1815384-f8c7-4965-a304-e4cd277f6fca.jpg)
 
 This app uses the PRAW reddit API to find the most mentioned US stock tickers. In this project, Vader sentiment analyzer is used to calculate the score of the various stock tickers. (i.e bullish score, bearish score, neutral score, total score).
 
