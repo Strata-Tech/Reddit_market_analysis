@@ -4,8 +4,19 @@ Analysis of reddit community 's most mentioned stocks and sentiment on the stock
 
 This app uses the PRAW reddit API to find the most mentioned US stock tickers. In this project, Vader sentiment analyzer is used to calculate the score of the various stock tickers. (i.e bullish score, bearish score, neutral score, total score).
 
+
+# Libaries used:
+<pre>
+PRAW
+Squarify
+nltk.sentiment.vader
+time
+</pre>
+
+
 # Parameters used for the Reddit PRAW API
 
+<pre>
 subs = []           sub-reddit to search
 post_flairs = {}    posts flairs to search || None flair is automatically considered
 goodAuth = {}       authors whom comments are allowed more than once
@@ -18,6 +29,8 @@ limit = int         define the limit, comments 'replace more' limit
 upvotes = int       define # of upvotes, comment is considered if upvotes exceed this #
 picks = int         define # of picks here, prints as "Top ## picks are:"
 picks_ayz = int     define # of picks for sentiment analysis
+</pre>
+
 
 
 # Data
@@ -25,23 +38,26 @@ This includes US stocks with their market capitalization more than USD 100 milli
 Assumptions: We are taking into consideration only reddit comments which are upvoted to a certain score. Nevertheless the parameters can be amended to suit various needs.
 
 
-#Sample of how output looks like:
+
+# Sample of how output looks like:
 
 Took 250 seconds to analyze 6000 comments in 75 posts in 5 subreddits post.
 
-Top 5 most mentioned picks:
-GME
-AMC
-SPCE
-TSLA
+Top 5 most mentioned picks:\
+GME\
+AMC\
+SPCE\
+TSLA\
 PLTR
 
+&nbsp; &nbsp; &nbsp; &nbsp; Bearish &nbsp; Neutral &nbsp; Bullish &nbsp; Total/Compound\
+GME    &nbsp; 4.7150    &nbsp;58.4240    &nbsp; &nbsp;12.8600          &nbsp; &nbsp; &nbsp;17.5071\
+AMC     &nbsp; 6.1920  &nbsp;   54.3040  &nbsp; &nbsp;   11.5030          &nbsp; &nbsp; &nbsp;12.6682 \
+SPCE    &nbsp; 1.8120    &nbsp;19.11808    &nbsp; &nbsp;3.0700            &nbsp; &nbsp; &nbsp;0.9318\
+TSLA    &nbsp;0.5800    &nbsp;5.5010  &nbsp; &nbsp;   1.9190            &nbsp; &nbsp; &nbsp;1.8647\
+PLTR    &nbsp;6.331781e-10    &nbsp;2.546367e-09    &nbsp; &nbsp;3.605879e-10          &nbsp; &nbsp; &nbsp;-3.123409e-10
 
- Sentiment analysis of top 5 picks: 
-                    GME      AMC     SPCE    TSLA          PLTR
-Bearish          4.7150   6.1920   1.8120  0.5800  6.331781e-10
-Neutral         58.4240  54.3040  19.1180  5.5010  2.546367e-09
-Bullish         12.8600  11.5030   3.0700  1.9190  3.605879e-10
-Total/Compound  17.5071  12.6682   0.9318  1.8647 -3.123409e-10
 
 
+
+![Unknown](https://user-images.githubusercontent.com/77420780/126025659-66effaa7-0793-4fe6-85ed-c954f4a506f5.png)
