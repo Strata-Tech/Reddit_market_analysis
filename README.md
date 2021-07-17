@@ -39,7 +39,7 @@ picks_ayz = int     define # of picks for sentiment analysis
 This includes US stocks with their market capitalization more than USD 100 million. (exclude penny stocks)
 Assumptions: We are taking into consideration only reddit comments which are upvoted to a certain score. Nevertheless the parameters can be amended to suit various needs.
 
-# Use cases
+# Use case
 By knowing market sentiment on which stocks are bullish and bearish, this may aid traders in momentum trading as well as better stock picks. 
 
 
