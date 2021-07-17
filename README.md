@@ -13,7 +13,7 @@ nltk.sentiment.vader
 time
 </pre>
 
-
+![WallStreetBets](https://user-images.githubusercontent.com/77420780/126026537-d4d3a909-f2d2-4356-9765-f3e1daa27acb.png)
 # Parameters used for the Reddit PRAW API
 
 <pre>
