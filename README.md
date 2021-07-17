@@ -7,7 +7,7 @@ This app uses the PRAW reddit API to find the most mentioned US stock tickers. P
 In this project, Vader sentiment analyzer is used to calculate the score of the various stock tickers. (i.e bullish score, bearish score, neutral score, total score).
 
 
-# Libaries used:
+# Libraries used:
 <pre>
 PRAW
 Squarify
