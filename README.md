@@ -6,14 +6,13 @@ Analysis of reddit community 's most mentioned stocks and sentiment on the stock
 This app uses the PRAW reddit API to find the most mentioned US stock tickers. PRAW, an acronym for “Python Reddit API Wrapper”, is a Python package that allows for simple access to Reddit’s API. PRAW aims to be easy to use and internally follows all of Reddit’s API rules. 
 In this project, Vader sentiment analyzer is used to calculate the score of the various stock tickers. (i.e bullish score, bearish score, neutral score, total score).
 
+# Technologies Used
+* PRAW
+* Squarify(for data viz)
+* nltk.sentiment.vader
+* time
+* pandas
 
-# Libraries used:
-<pre>
-PRAW
-Squarify
-nltk.sentiment.vader
-time
-</pre>
 
 ![WallStreetBets](https://user-images.githubusercontent.com/77420780/126026537-d4d3a909-f2d2-4356-9765-f3e1daa27acb.png)
 # Parameters used for the Reddit PRAW API
