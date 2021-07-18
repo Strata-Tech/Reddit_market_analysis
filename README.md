@@ -1,4 +1,4 @@
-# Reddit_market_analysis📈🚀💰💎👐
+# Reddit Market Analysis📈🚀💰💎👐
 Analysis of reddit community 's most mentioned stocks and sentiment on the stocks(i.e bullish or bearish)
 
 ![wallstreetmemes-lede-1300x734](https://user-images.githubusercontent.com/77420780/126026718-a1815384-f8c7-4965-a304-e4cd277f6fca.jpg)
@@ -6,7 +6,7 @@ Analysis of reddit community 's most mentioned stocks and sentiment on the stock
 This app uses the PRAW reddit API to find the most mentioned US stock tickers. PRAW, an acronym for “Python Reddit API Wrapper”, is a Python package that allows for simple access to Reddit’s API. PRAW aims to be easy to use and internally follows all of Reddit’s API rules. 
 In this project, Vader sentiment analyzer is used to calculate the score of the various stock tickers. (i.e bullish score, bearish score, neutral score, total score).
 
-# Technologies Used
+## Technologies Used
 * PRAW
 * Squarify(for data viz)
 * nltk.sentiment.vader
@@ -15,7 +15,7 @@ In this project, Vader sentiment analyzer is used to calculate the score of the 
 
 
 ![WallStreetBets](https://user-images.githubusercontent.com/77420780/126026537-d4d3a909-f2d2-4356-9765-f3e1daa27acb.png)
-# Parameters used for the Reddit PRAW API
+## Parameters used for the Reddit PRAW API
 
 <pre>
 subs = []           sub-reddit to search
@@ -34,16 +34,19 @@ picks_ayz = int     define # of picks for sentiment analysis
 
 
 
-# Data
+## Data
 This includes US stocks with their market capitalization more than USD 100 million. (exclude penny stocks)
 Assumptions: We are taking into consideration only reddit comments which are upvoted to a certain score. Nevertheless the parameters can be amended to suit various needs.
 
-# Use case
+## Data Preprocessing and cleaning
+From the data I have split the text into tokens. From the tokens i have removed $tags as well as filtered the data for upper cases which represents stock tickers instead of normal words.
+
+## Use case
 By knowing market sentiment on which stocks are bullish and bearish, this may aid traders in momentum trading as well as better stock picks. 
 
 
 
-# Sample of how output looks like:
+## Sample of how output looks like:
 
 Took 250 seconds to analyze 6000 comments in 75 posts in 5 subreddits post.
 
